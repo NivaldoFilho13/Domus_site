@@ -580,3 +580,182 @@
           animation: none;
         }
       }
+
+      .navbtn {
+        padding: 10px 20px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, var(--gold2), var(--gold));
+        color: #1a1206;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+      }
+      .hero2 .in {
+        padding-bottom: 150px;
+      }
+      .sb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 28px;
+        z-index: 3;
+      }
+      .sbi {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        gap: 12px;
+        align-items: end;
+        background: rgba(255, 255, 255, 0.96);
+        color: #2a2218;
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      }
+      .sbi label {
+        display: block;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        color: #7a6a50;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+      .sbi select {
+        margin: 0;
+        background: #f6f0e4;
+        color: #2a2218;
+      }
+      .sbi .btn {
+        margin: 0;
+        white-space: nowrap;
+      }
+      @media (max-width: 760px) {
+        .hero2 {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .hero2 .in {
+          padding-bottom: 28px;
+        }
+        .sb {
+          position: relative;
+          bottom: auto;
+          padding: 0 0 26px;
+          z-index: 3;
+        }
+        .sbi {
+          grid-template-columns: 1fr;
+        }
+        .navbtn {
+          display: none;
+        }
+      }
+      .hd {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .hd a {
+        color: var(--gold);
+        text-decoration: none;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+      }
+      .hb {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 0;
+        background: rgba(10, 8, 5, 0.7);
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        z-index: 2;
+      }
+      .hb svg {
+        width: 18px;
+        height: 18px;
+        stroke: #f0d28a;
+        fill: none;
+        stroke-width: 2;
+      }
+      .hb.on svg {
+        fill: #f0d28a;
+      }
+      .ab {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      }
+      @media (max-width: 760px) {
+        .ab {
+          grid-template-columns: 1fr;
+        }
+      }
+      .abi {
+        position: relative;
+      }
+      .abi .bd {
+        position: absolute;
+        right: -8px;
+        bottom: -18px;
+        background: linear-gradient(135deg, var(--gold2), var(--gold));
+        color: #1a1206;
+        border-radius: 18px;
+        padding: 16px 22px;
+        text-align: center;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      }
+      .bd b {
+        display: block;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 42px;
+        line-height: 1;
+      }
+      .bd span {
+        font-size: 12px;
+      }
+      .ck {
+        list-style: none;
+        padding: 0;
+        margin: 18px 0;
+      }
+      .ck li {
+        padding: 5px 0 5px 28px;
+        position: relative;
+        color: var(--mut);
+      }
+      .ck li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--gold);
+        font-weight: 700;
+      }
+      .cta2 {
+        background: linear-gradient(135deg, #f0d28a, #d4a84f);
+        color: #1a1206;
+        text-align: center;
+        padding: 80px 22px;
+      }
+      .cta2 h2 {
+        color: #1a1206;
+        max-width: 760px;
+        margin: 10px auto 8px;
+      }
+      .cta2 h2 b {
+        color: #5a3d06;
+      }
+      .cta2 .eyebrow {
+        color: #5a3d06;
+      }
+      .btn.dk {
+        background: #1a1206;
+        color: #f0d28a;
+      }
