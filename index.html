@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Domus Marketing — Marketing Imobiliário</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="target" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <circle cx="12" cy="12" r="5" />
+          <circle cx="12" cy="12" r="1.5" />
+          <path d="M12 12l8-8M17 3h4v4" />
+        </symbol>
+        <symbol id="mega" viewBox="0 0 24 24">
+          <path d="M3 10v4h4l9 5V5L7 10H3zM19 9a4 4 0 010 6M7 14l1 6h3l-1-5" />
+        </symbol>
+        <symbol id="chart" viewBox="0 0 24 24">
+          <path
+            d="M4 20V14M10 20V9M16 20v-8M22 20H2M4 9l6-5 5 4 6-5M17 3h4v4"
+          />
+        </symbol>
+        <symbol id="hand" viewBox="0 0 24 24">
+          <path d="M2 12l5-5 4 2 4-2 5 5-6 7-3-2-3 2-6-7zM9 15l2 2M12 13l2 2" />
+        </symbol>
+        <symbol id="cam" viewBox="0 0 24 24">
+          <path d="M3 8h4l2-3h6l2 3h4v12H3z" />
+          <circle cx="12" cy="13" r="4" />
+        </symbol>
+        <symbol id="key" viewBox="0 0 24 24">
+          <circle cx="8" cy="12" r="4" />
+          <path d="M12 12h9M18 12v4M21 12v3" />
+        </symbol>
+        <symbol id="users" viewBox="0 0 24 24">
+          <circle cx="9" cy="8" r="3.5" />
+          <path
+            d="M2 21c0-4 3-6 7-6s7 2 7 6M16 4.5a3.5 3.5 0 010 7M22 21c0-3-1.5-5-4-5.8"
+          />
+        </symbol>
+        <symbol id="shield" viewBox="0 0 24 24">
+          <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" />
+          <path d="M8.5 12l2.5 2.5 5-5" />
+        </symbol>
+        <symbol id="home" viewBox="0 0 24 24">
+          <path d="M3 11l9-8 9 8M5 10v10h14V10M10 20v-6h4v6" />
+        </symbol>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#1b1a2e" />
+          <stop offset=".55" stop-color="#b9633a" />
+          <stop offset="1" stop-color="#f0b45e" />
+        </linearGradient>
+        <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f0b45e" />
+          <stop offset="1" stop-color="#2a5f78" />
+        </linearGradient>
+        <symbol id="house" viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="url(#sky)" />
+          <circle cx="310" cy="150" r="46" fill="#ffd98a" opacity=".85" />
+          <path d="M0 190h400v70H0z" fill="#1c1812" />
+          <path d="M0 215h400v45H0z" fill="url(#pool)" opacity=".9" />
+          <rect x="70" y="95" width="190" height="95" fill="#d9cbb5" />
+          <rect x="40" y="70" width="170" height="26" fill="#efe4d0" />
+          <rect x="230" y="120" width="120" height="70" fill="#c7b79d" />
+          <rect x="215" y="105" width="150" height="16" fill="#efe4d0" />
+          <g fill="#ffc861">
+            <rect x="85" y="108" width="55" height="70" />
+            <rect x="150" y="108" width="40" height="70" />
+            <rect x="245" y="132" width="50" height="46" />
+            <rect x="305" y="132" width="30" height="46" />
+          </g>
+          <g stroke="#8a6a35" stroke-width="2">
+            <path d="M112 108v70M85 143h55M270 132v46" />
+          </g>
+          <g fill="#143a24">
+            <circle cx="30" cy="170" r="24" />
+            <circle cx="372" cy="172" r="20" />
+            <circle cx="52" cy="182" r="16" />
+          </g>
+        </symbol>
+        <symbol id="pin" viewBox="0 0 24 24">
+          <path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z" />
+          <circle cx="12" cy="10" r="2.6" />
+        </symbol>
+        <symbol id="apt" viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="url(#sky)" />
+          <circle cx="320" cy="140" r="40" fill="#ffd98a" opacity=".8" />
+          <rect y="215" width="400" height="45" fill="#1c1812" />
+          <rect x="110" y="40" width="130" height="180" fill="#d9cbb5" />
+          <rect x="240" y="90" width="80" height="130" fill="#c3b398" />
+          <rect x="95" y="32" width="160" height="12" fill="#efe4d0" />
+          <rect x="120" y="55" width="18" height="16" fill="#6d6556" />
+          <rect x="150" y="55" width="18" height="16" fill="#ffc861" />
+          <rect x="180" y="55" width="18" height="16" fill="#ffc861" />
+          <rect x="210" y="55" width="18" height="16" fill="#6d6556" />
+          <rect x="120" y="83" width="18" height="16" fill="#6d6556" />
+          <rect x="150" y="83" width="18" height="16" fill="#ffc861" />
+          <rect x="180" y="83" width="18" height="16" fill="#ffc861" />
+          <rect x="210" y="83" width="18" height="16" fill="#6d6556" />
+          <rect x="120" y="111" width="18" height="16" fill="#6d6556" />
+          <rect x="150" y="111" width="18" height="16" fill="#ffc861" />
+          <rect x="180" y="111" width="18" height="16" fill="#ffc861" />
+          <rect x="210" y="111" width="18" height="16" fill="#6d6556" />
+          <rect x="120" y="139" width="18" height="16" fill="#6d6556" />
+          <rect x="150" y="139" width="18" height="16" fill="#ffc861" />
+          <rect x="180" y="139" width="18" height="16" fill="#ffc861" />
+          <rect x="210" y="139" width="18" height="16" fill="#6d6556" />
+          <rect x="120" y="167" width="18" height="16" fill="#6d6556" />
+          <rect x="150" y="167" width="18" height="16" fill="#ffc861" />
+          <rect x="180" y="167" width="18" height="16" fill="#ffc861" />
+          <rect x="210" y="167" width="18" height="16" fill="#6d6556" />
+          <rect x="120" y="195" width="18" height="16" fill="#6d6556" />
+          <rect x="150" y="195" width="18" height="16" fill="#ffc861" />
+          <rect x="180" y="195" width="18" height="16" fill="#ffc861" />
+          <rect x="210" y="195" width="18" height="16" fill="#6d6556" />
+          <rect x="252" y="105" width="16" height="16" fill="#6d6556" />
+          <rect x="280" y="105" width="16" height="16" fill="#ffc861" />
+          <rect x="252" y="133" width="16" height="16" fill="#ffc861" />
+          <rect x="280" y="133" width="16" height="16" fill="#6d6556" />
+          <rect x="252" y="161" width="16" height="16" fill="#6d6556" />
+          <rect x="280" y="161" width="16" height="16" fill="#ffc861" />
+          <rect x="252" y="189" width="16" height="16" fill="#ffc861" />
+          <rect x="280" y="189" width="16" height="16" fill="#6d6556" />
+          <rect x="160" y="190" width="30" height="30" fill="#7a5a28" />
+        </symbol>
+        <symbol id="land" viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="url(#sky)" />
+          <path
+            d="M0 150l70-50 60 40 80-70 90 80 100-50v130H0z"
+            fill="#3b3a4a"
+          />
+          <rect y="170" width="400" height="90" fill="#6f7a3a" />
+          <path d="M0 205h400v55H0z" fill="#8a7a3c" />
+          <path d="M0 178h400" stroke="#4a3a20" stroke-width="3" />
+          <rect x="8" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="48" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="88" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="128" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="168" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="208" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="248" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="288" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="328" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="368" y="178" width="5" height="34" fill="#4a3a20" />
+          <rect x="196" y="120" width="8" height="70" fill="#4a3a20" />
+          <rect x="140" y="104" width="120" height="32" rx="4" fill="#f0d28a" />
+          <text
+            x="200"
+            y="125"
+            text-anchor="middle"
+            font-family="Montserrat,sans-serif"
+            font-size="14"
+            font-weight="700"
+            fill="#2a1d08"
+          >
+            VENDE-SE
+          </text>
+        </symbol>
+        <symbol id="farm" viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="url(#sky)" />
+          <path d="M0 170Q100 120 220 165T400 150V260H0z" fill="#2d4a2a" />
+          <path d="M0 210Q150 180 400 205V260H0z" fill="#3f6a34" />
+          <rect x="150" y="140" width="110" height="60" fill="#e6d6b8" />
+          <path d="M135 142l70-45 70 45z" fill="#a8452a" />
+          <rect x="172" y="158" width="26" height="42" fill="#7a5a28" />
+          <rect x="215" y="158" width="28" height="22" fill="#ffc861" />
+          <rect x="48" y="150" width="8" height="50" fill="#4a3a20" />
+          <circle cx="52" cy="140" r="30" fill="#143a24" />
+          <rect x="326" y="158" width="8" height="42" fill="#4a3a20" />
+          <circle cx="330" cy="148" r="26" fill="#143a24" />
+        </symbol>
+        <symbol id="shop" viewBox="0 0 400 260">
+          <rect width="400" height="260" fill="url(#sky)" />
+          <rect y="215" width="400" height="45" fill="#1c1812" />
+          <rect x="70" y="80" width="260" height="140" fill="#d9cbb5" />
+          <rect x="60" y="66" width="280" height="24" fill="#f0d28a" />
+          <path d="M80 98h240l-10 28H90z" fill="#a8452a" />
+          <path
+            d="M110 98l-6 28M150 98l-3 28M190 98v28M230 98l3 28M270 98l6 28"
+            stroke="#f4ece0"
+            stroke-width="10"
+          />
+          <rect x="95" y="138" width="130" height="82" fill="#ffc861" />
+          <rect x="245" y="138" width="60" height="82" fill="#7a5a28" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="top">
+      <div class="wrap">
+        <nav>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Domus Marketing"
+          />
+          <div class="l">
+            <a href="#/inicio" data-n="inicio">Início</a
+            ><a href="#/servicos" data-n="servicos">Serviços</a
+            ><a href="#/portfolio" data-n="portfolio">Portfólio</a
+            ><a href="#/sobre" data-n="sobre">Sobre</a
+            ><a href="#/contato" data-n="contato">Contato</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page" id="inicio">
+        <div class="hero2">
+          <svg
+            class="bg"
+            viewBox="0 0 1200 700"
+            preserveAspectRatio="xMaxYMid slice"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="hs" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0d0b1c" />
+                <stop offset=".35" stop-color="#3a2547" />
+                <stop offset=".62" stop-color="#c0653a" />
+                <stop offset=".78" stop-color="#f4b45c" />
+              </linearGradient>
+              <radialGradient id="sg">
+                <stop offset="0" stop-color="#ffe3a0" />
+                <stop offset=".35" stop-color="#ffc66a" stop-opacity=".6" />
+                <stop offset="1" stop-color="#ffc66a" stop-opacity="0" />
+              </radialGradient>
+              <linearGradient id="hp" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f0b45e" />
+                <stop offset=".5" stop-color="#4c5f78" />
+                <stop offset="1" stop-color="#14202c" />
+              </linearGradient>
+              <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6dc9a" />
+                <stop offset=".5" stop-color="#c8963a" />
+                <stop offset="1" stop-color="#8a6420" />
+              </linearGradient>
+            </defs>
+            <rect width="1200" height="700" fill="url(#hs)" />
+            <g fill="#fff">
+              <circle class="tw" cx="760" cy="60" r="2" />
+              <circle
+                class="tw"
+                cx="900"
+                cy="110"
+                r="1.6"
+                style="animation-delay: 1s"
+              />
+              <circle
+                class="tw"
+                cx="1060"
+                cy="50"
+                r="2"
+                style="animation-delay: 0.5s"
+              />
+              <circle
+                class="tw"
+                cx="1140"
+                cy="140"
+                r="1.5"
+                style="animation-delay: 2s"
+              />
+              <circle
+                class="tw"
+                cx="640"
+                cy="130"
+                r="1.5"
+                style="animation-delay: 1.5s"
+              />
+            </g>
+            <circle cx="880" cy="440" r="230" fill="url(#sg)" />
+            <circle cx="880" cy="440" r="70" fill="#ffe3a0" />
+            <g class="dr" fill="#ffd9a0" opacity=".25">
+              <ellipse cx="560" cy="250" rx="130" ry="18" />
+              <ellipse cx="980" cy="200" rx="150" ry="16" />
+              <ellipse cx="760" cy="330" rx="110" ry="12" />
+            </g>
+            <path
+              d="M0 500 Q200 440 420 490 T800 480 T1200 470V560H0Z"
+              fill="#1a1410"
+            />
+            <rect y="520" width="1200" height="180" fill="#120e0a" />
+            <rect
+              y="560"
+              width="1200"
+              height="140"
+              fill="url(#hp)"
+              opacity=".92"
+            />
+            <rect x="640" y="330" width="420" height="190" fill="#d8c9b0" />
+            <rect x="590" y="300" width="330" height="34" fill="#f0e5cf" />
+            <rect x="740" y="190" width="300" height="112" fill="#c9b99f" />
+            <rect x="700" y="170" width="380" height="24" fill="#f0e5cf" />
+            <g fill="#ffc861">
+              <rect x="660" y="350" width="130" height="150" />
+              <rect x="805" y="350" width="90" height="150" />
+              <rect x="915" y="360" width="120" height="140" />
+              <rect x="760" y="208" width="120" height="78" />
+              <rect x="900" y="208" width="120" height="78" />
+            </g>
+            <g stroke="#7a5a28" stroke-width="3" fill="none">
+              <path
+                d="M725 350v150M660 425h130M975 360v140M820 208v78M960 208v78"
+              />
+            </g>
+            <path
+              d="M740 298h300"
+              stroke="#fff"
+              stroke-opacity=".55"
+              stroke-width="4"
+            />
+            <g fill="#ffc861" opacity=".28">
+              <rect x="660" y="570" width="130" height="90" />
+              <rect x="805" y="570" width="90" height="90" />
+              <rect x="915" y="570" width="120" height="90" />
+            </g>
+            <g fill="#0e2216">
+              <circle cx="560" cy="470" r="46" />
+              <circle cx="1110" cy="460" r="52" />
+              <circle cx="1150" cy="500" r="40" />
+              <circle cx="520" cy="500" r="30" />
+            </g>
+            <g class="fl" style="transform-origin: 1050px 560px">
+              <circle
+                cx="1050"
+                cy="580"
+                r="26"
+                fill="none"
+                stroke="url(#hg)"
+                stroke-width="7"
+              />
+              <path d="M1050 606v26" stroke="url(#hg)" stroke-width="6" />
+              <path d="M1016 668l34-30 34 30v40h-68z" fill="url(#hg)" />
+              <rect x="1034" y="676" width="14" height="14" fill="#2a1d08" />
+              <rect x="1052" y="676" width="14" height="14" fill="#2a1d08" />
+              <rect x="1034" y="694" width="14" height="14" fill="#2a1d08" />
+              <rect x="1052" y="694" width="14" height="14" fill="#2a1d08" />
+            </g>
+          </svg>
+          <div class="wrap in">
+            <div class="eyebrow">
+              Marketing imobiliário com foco em resultados
+            </div>
+            <h1>
+              Seu imóvel no lugar certo.<br /><i>Com a estratégia certa.</i>
+            </h1>
+            <p class="lead">
+              A Domus Marketing conecta o seu imóvel às pessoas certas, com
+              estratégias modernas, criativas e focadas em resultados reais.
+            </p>
+            <div class="btns">
+              <a class="btn" href="#/contato">FALE CONOSCO →</a
+              ><a class="btn ghost" href="#/servicos">CONHEÇA OS SERVIÇOS</a>
+            </div>
+            <div class="chips">
+              <span class="chip"
+                ><svg viewBox="0 0 24 24"><use href="#cam" /></svg>Fotos e
+                vídeos profissionais</span
+              >
+              <span class="chip"
+                ><svg viewBox="0 0 24 24"><use href="#mega" /></svg>Anúncios
+                estratégicos</span
+              >
+              <span class="chip"
+                ><svg viewBox="0 0 24 24"><use href="#chart" /></svg>Mais
+                visibilidade</span
+              >
+              <span class="chip"
+                ><svg viewBox="0 0 24 24"><use href="#shield" /></svg>Negociação
+                segura</span
+              >
+              <span class="chip"
+                ><svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu —
+                CE</span
+              >
+            </div>
+          </div>
+        </div>
+        <section style="border: 0">
+          <div class="wrap" style="text-align: center">
+            <div class="eyebrow">Seu imóvel em boas mãos</div>
+            <h2>Mais alcance, mais <b>negócios.</b></h2>
+            <div class="stats">
+              <div><b>+150</b><span>imóveis divulgados</span></div>
+              <div><b>3x</b><span>mais alcance</span></div>
+              <div><b>98%</b><span>clientes satisfeitos</span></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="page" id="servicos">
+        <section style="border: 0">
+          <div class="wrap">
+            <div class="eyebrow">O que fazemos</div>
+            <h2>Valorize seu imóvel com <b>quem entende do mercado.</b></h2>
+            <div class="svc">
+              <div class="sc">
+                <div class="bn">01</div>
+                <div class="ic">
+                  <svg viewBox="0 0 24 24"><use href="#cam" /></svg>
+                </div>
+                <h3>Fotos e vídeos profissionais</h3>
+                <p>Imagens que valorizam cada detalhe e despertam desejo.</p>
+                <ul>
+                  <li>Fotografia e vídeo em alta qualidade</li>
+                  <li>Drone e tour virtual</li>
+                </ul>
+              </div>
+              <div class="sc">
+                <div class="bn">02</div>
+                <div class="ic">
+                  <svg viewBox="0 0 24 24"><use href="#mega" /></svg>
+                </div>
+                <h3>Anúncios estratégicos</h3>
+                <p>
+                  Campanhas segmentadas para alcançar quem realmente importa.
+                </p>
+                <ul>
+                  <li>Meta Ads e Google Ads</li>
+                  <li>Textos que convertem</li>
+                </ul>
+              </div>
+              <div class="sc">
+                <div class="bn">03</div>
+                <div class="ic">
+                  <svg viewBox="0 0 24 24"><use href="#target" /></svg>
+                </div>
+                <h3>Mais alcance</h3>
+                <p>Seu imóvel visto por quem quer comprar ou alugar.</p>
+                <ul>
+                  <li>Redes sociais e portais</li>
+                  <li>Presença digital forte</li>
+                </ul>
+              </div>
+              <div class="sc">
+                <div class="bn">04</div>
+                <div class="ic">
+                  <svg viewBox="0 0 24 24"><use href="#users" /></svg>
+                </div>
+                <h3>Público qualificado</h3>
+                <p>Contatos interessados e prontos para conversar.</p>
+                <ul>
+                  <li>Segmentação por perfil</li>
+                  <li>Atendimento rápido dos leads</li>
+                </ul>
+              </div>
+              <div class="sc">
+                <div class="bn">05</div>
+                <div class="ic">
+                  <svg viewBox="0 0 24 24"><use href="#hand" /></svg>
+                </div>
+                <h3>Negociação segura</h3>
+                <p>Eficiência e transparência até o fechamento.</p>
+                <ul>
+                  <li>Acompanhamento em cada etapa</li>
+                  <li>Processo seguro e claro</li>
+                </ul>
+              </div>
+              <div class="sc">
+                <div class="bn">06</div>
+                <div class="ic">
+                  <svg viewBox="0 0 24 24"><use href="#key" /></svg>
+                </div>
+                <h3>Venda ou locação ágil</h3>
+                <p>Mais agilidade e mais negócios concretizados.</p>
+                <ul>
+                  <li>Relatórios de resultado</li>
+                  <li>Estratégia ajustada ao mercado</li>
+                </ul>
+              </div>
+            </div>
+            <div class="fb" id="fb">
+              <button data-f="Todos" class="on">Todos</button
+              ><button data-f="Casa">Casas</button
+              ><button data-f="Apartamento">Apartamentos</button
+              ><button data-f="Terreno">Terrenos</button
+              ><button data-f="Sítio">Sítios</button
+              ><button data-f="Comercial">Comercial</button>
+            </div>
+            <div class="grid" id="pl">
+              <div class="card prop pc" data-t="Casa">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#house" /></svg
+                ><span class="pr">R$ 580 mil</span>
+                <div class="in">
+                  <div class="tag">Casa</div>
+                  <h3>Casa moderna com piscina</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">4 quartos · 320 m² · piscina</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Casa">
+                <svg
+                  class="scene"
+                  viewBox="0 0 400 260"
+                  style="filter: hue-rotate(-25deg)"
+                >
+                  <use href="#house" /></svg
+                ><span class="pr">R$ 360 mil</span>
+                <div class="in">
+                  <div class="tag">Casa</div>
+                  <h3>Casa térrea em condomínio</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">3 quartos · 180 m² · garagem</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Apartamento">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#apt" /></svg
+                ><span class="pr">R$ 240 mil</span>
+                <div class="in">
+                  <div class="tag">Apartamento</div>
+                  <h3>Apartamento 2 quartos</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">2 quartos · 68 m² · varanda</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Apartamento">
+                <svg
+                  class="scene"
+                  viewBox="0 0 400 260"
+                  style="filter: hue-rotate(150deg) saturate(0.8)"
+                >
+                  <use href="#apt" /></svg
+                ><span class="pr">R$ 490 mil</span>
+                <div class="in">
+                  <div class="tag">Apartamento</div>
+                  <h3>Cobertura duplex</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">3 suítes · 140 m² · churrasqueira</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Terreno">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#land" /></svg
+                ><span class="pr">R$ 85 mil</span>
+                <div class="in">
+                  <div class="tag">Terreno</div>
+                  <h3>Terreno plano 300 m²</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">300 m² · documentação em dia</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Terreno">
+                <svg
+                  class="scene"
+                  viewBox="0 0 400 260"
+                  style="filter: hue-rotate(-30deg)"
+                >
+                  <use href="#land" /></svg
+                ><span class="pr">R$ 160 mil</span>
+                <div class="in">
+                  <div class="tag">Terreno</div>
+                  <h3>Terreno comercial de esquina</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">450 m² · ótimo fluxo</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Sítio">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#farm" /></svg
+                ><span class="pr">R$ 420 mil</span>
+                <div class="in">
+                  <div class="tag">Sítio</div>
+                  <h3>Sítio com área verde</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">2 hectares · casa sede · pomar</div>
+                </div>
+              </div>
+              <div class="card prop pc" data-t="Comercial">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#shop" />
+                </svg>
+                <span class="pr">Aluguel R$ 1.800</span>
+                <div class="in">
+                  <div class="tag">Comercial</div>
+                  <h3>Sala comercial no centro</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <div class="meta">55 m² · vitrine · banheiro</div>
+                </div>
+              </div>
+            </div>
+            <p class="lead" style="margin-top: 16px; font-size: 13px">
+              Imóveis, ilustrações e valores de exemplo para demonstração.
+            </p>
+            <div class="locbox">
+              <div>
+                <div class="eyebrow">Onde estamos</div>
+                <h2 style="margin-bottom: 14px">Ipu, <b>Ceará.</b></h2>
+                <p class="lead">
+                  Atendemos Ipu e cidades da região, com visitas, fotos e
+                  divulgação feitas pela equipe local.
+                </p>
+                <div class="loc" style="font-size: 14px; margin-top: 16px">
+                  <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE ·
+                  Brasil
+                </div>
+                <a class="btn" href="#/contato">AGENDAR VISITA →</a>
+              </div>
+              <svg class="map" viewBox="0 0 400 240">
+                <rect width="400" height="240" fill="#1b1710" />
+                <g
+                  stroke="#d4a84f"
+                  stroke-opacity=".25"
+                  fill="none"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M0 60h400M0 130h400M0 190h400M80 0v240M190 0v240M300 0v240"
+                  />
+                  <path
+                    d="M0 200Q120 150 200 120T400 60"
+                    stroke-opacity=".6"
+                    stroke-width="4"
+                  />
+                </g>
+                <circle
+                  class="rg"
+                  cx="200"
+                  cy="120"
+                  r="60"
+                  fill="none"
+                  stroke="#f0d28a"
+                  stroke-width="2"
+                />
+                <path
+                  d="M200 150s-22-19-22-34a22 22 0 0144 0c0 15-22 34-22 34z"
+                  fill="#d4a84f"
+                />
+                <circle cx="200" cy="116" r="8" fill="#1b1710" />
+                <text
+                  x="200"
+                  y="185"
+                  text-anchor="middle"
+                  font-family="Cormorant Garamond,serif"
+                  font-size="26"
+                  fill="#f4ece0"
+                >
+                  Ipu — CE
+                </text>
+              </svg>
+            </div>
+            <div class="band">
+              <h3>Pronto para destacar o seu imóvel?</h3>
+              <p class="lead" style="margin: 8px auto 0">
+                Fale com a equipe e receba uma proposta personalizada.
+              </p>
+              <a class="btn" href="#/contato">FALE CONOSCO →</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="page" id="portfolio">
+        <section style="border: 0">
+          <div class="wrap">
+            <div class="eyebrow">Portfólio</div>
+            <h2>Imóveis que <b>ganharam destaque.</b></h2>
+            <div class="grid">
+              <div class="card prop">
+                <svg class="scene" viewBox="0 0 400 260">
+                  <use href="#house" />
+                </svg>
+                <div class="in">
+                  <div class="tag">Venda</div>
+                  <h3>Casa contemporânea com piscina</h3>
+                  <p>Campanha completa com foto, vídeo e anúncios.</p>
+                </div>
+              </div>
+              <div class="card prop">
+                <svg
+                  class="scene"
+                  viewBox="0 0 400 260"
+                  style="filter: hue-rotate(-25deg) saturate(0.9)"
+                >
+                  <use href="#house" />
+                </svg>
+                <div class="in">
+                  <div class="tag">Locação</div>
+                  <h3>Residência em condomínio fechado</h3>
+                  <p>Alcance segmentado e locação em poucas semanas.</p>
+                </div>
+              </div>
+              <div class="card prop">
+                <svg
+                  class="scene"
+                  viewBox="0 0 400 260"
+                  style="filter: hue-rotate(160deg) saturate(0.8)"
+                >
+                  <use href="#house" />
+                </svg>
+                <div class="in">
+                  <div class="tag">Lançamento</div>
+                  <h3>Empreendimento de alto padrão</h3>
+                  <p>Posicionamento premium e geração de leads.</p>
+                </div>
+              </div>
+            </div>
+            <p class="lead" style="margin-top: 18px; font-size: 13px">
+              Ilustrações de exemplo — substitua por fotos reais dos imóveis.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="page" id="sobre">
+        <section style="border: 0">
+          <div class="wrap">
+            <div class="eyebrow">Sobre a Domus</div>
+            <h2>Do primeiro contato à <b>venda ou locação.</b></h2>
+            <div class="grid">
+              <div class="card">
+                <div class="num">01</div>
+                <h3>Diagnóstico</h3>
+                <p>Entendemos o imóvel e o público ideal.</p>
+              </div>
+              <div class="card">
+                <div class="num">02</div>
+                <h3>Produção</h3>
+                <p>Fotos, vídeos e textos profissionais.</p>
+              </div>
+              <div class="card">
+                <div class="num">03</div>
+                <h3>Divulgação</h3>
+                <p>Anúncios digitais inteligentes.</p>
+              </div>
+              <div class="card">
+                <div class="num">04</div>
+                <h3>Fechamento</h3>
+                <p>Negociação segura e eficiente.</p>
+              </div>
+            </div>
+            <div class="stats" style="margin-top: 50px">
+              <div><b>+150</b><span>imóveis divulgados</span></div>
+              <div><b>3x</b><span>mais alcance</span></div>
+              <div><b>98%</b><span>clientes satisfeitos</span></div>
+            </div>
+            <p class="lead" style="margin-top: 14px; font-size: 13px">
+              Números ilustrativos de demonstração.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="page" id="contato">
+        <section style="border: 0">
+          <div class="wrap" style="max-width: 560px">
+            <div class="eyebrow">Vamos conversar</div>
+            <h2>Seu imóvel <b>em boas mãos.</b></h2>
+            <input id="n" placeholder="Seu nome" /><input
+              id="t"
+              placeholder="WhatsApp"
+            />
+            <select id="s">
+              <option>Quero vender</option>
+              <option>Quero alugar</option>
+              <option>Quero divulgar um empreendimento</option>
+            </select>
+            <textarea
+              id="m"
+              rows="4"
+              placeholder="Conte sobre o seu imóvel"
+            ></textarea>
+            <button
+              class="btn"
+              style="margin-top: 6px"
+              onclick="document.getElementById('ok').style.display = 'block'"
+            >
+              ENVIAR →
+            </button>
+            <p id="ok">
+              Obrigado! Entraremos em contato em breve. (demonstração)
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>© 2026 DOMUS MARKETING · IPU — CE · SITE DEMONSTRATIVO</footer>
+    <script>
+      function go() {
+        var h = (location.hash || "#/inicio").replace("#/", "");
+        if (!document.getElementById(h)) h = "inicio";
+        document.querySelectorAll(".page").forEach(function (p) {
+          p.classList.toggle("on", p.id === h);
+        });
+        document.querySelectorAll("nav a").forEach(function (a) {
+          a.classList.toggle("on", a.dataset.n === h);
+        });
+        window.scrollTo(0, 0);
+      }
+      window.addEventListener("hashchange", go);
+      go();
+
+      document.getElementById("fb").addEventListener("click", function (e) {
+        var f = e.target.dataset.f;
+        if (!f) return;
+        this.querySelectorAll("button").forEach(function (b) {
+          b.classList.toggle("on", b === e.target);
+        });
+        document.querySelectorAll("#pl .prop").forEach(function (c) {
+          c.style.display = f === "Todos" || c.dataset.t === f ? "" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>
