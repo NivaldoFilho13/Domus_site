@@ -209,6 +209,7 @@
             ><a href="#/sobre" data-n="sobre">Sobre</a
             ><a href="#/contato" data-n="contato">Contato</a>
           </div>
+          <a class="navbtn" href="#/contato">Fale com um especialista</a>
         </nav>
       </div>
     </header>
@@ -384,18 +385,169 @@
               >
             </div>
           </div>
+          <div class="sb">
+            <div class="wrap">
+              <div class="sbi">
+                <div>
+                  <label>Tipo de imóvel</label
+                  ><select id="bt">
+                    <option>Todos</option>
+                    <option>Casa</option>
+                    <option>Apartamento</option>
+                    <option>Terreno</option>
+                    <option>Sítio</option>
+                    <option>Comercial</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Cidade</label
+                  ><select>
+                    <option>Ipu — CE</option>
+                  </select>
+                </div>
+                <button class="btn" onclick="busca()">BUSCAR IMÓVEIS →</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <section style="border: 0">
-          <div class="wrap" style="text-align: center">
-            <div class="eyebrow">Seu imóvel em boas mãos</div>
-            <h2>Mais alcance, mais <b>negócios.</b></h2>
-            <div class="stats">
-              <div><b>+150</b><span>imóveis divulgados</span></div>
-              <div><b>3x</b><span>mais alcance</span></div>
-              <div><b>98%</b><span>clientes satisfeitos</span></div>
+        <section style="border: 0; padding-bottom: 30px">
+          <div class="wrap">
+            <div class="hd">
+              <div>
+                <div class="eyebrow">Selecionados para você</div>
+                <h2 style="margin-bottom: 0">Imóveis em <b>destaque</b></h2>
+              </div>
+              <a href="#/servicos">VER TODOS →</a>
+            </div>
+            <div class="grid" style="margin-top: 30px">
+              <div class="card prop pc">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#house" /></svg
+                ><button class="hb" aria-label="Favoritar">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"
+                    />
+                  </svg></button
+                ><span class="pr">R$ 580 mil</span>
+                <div class="in">
+                  <div class="tag">Casa</div>
+                  <h3>Casa moderna com piscina</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <a
+                    class="tag"
+                    href="#/servicos"
+                    style="
+                      text-decoration: none;
+                      display: inline-block;
+                      margin-top: 10px;
+                    "
+                    >Ver detalhes →</a
+                  >
+                </div>
+              </div>
+              <div class="card prop pc">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#apt" /></svg
+                ><button class="hb" aria-label="Favoritar">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"
+                    />
+                  </svg></button
+                ><span class="pr">R$ 240 mil</span>
+                <div class="in">
+                  <div class="tag">Apartamento</div>
+                  <h3>Apartamento 2 quartos</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <a
+                    class="tag"
+                    href="#/servicos"
+                    style="
+                      text-decoration: none;
+                      display: inline-block;
+                      margin-top: 10px;
+                    "
+                    >Ver detalhes →</a
+                  >
+                </div>
+              </div>
+              <div class="card prop pc">
+                <svg class="scene" viewBox="0 0 400 260" style="">
+                  <use href="#farm" /></svg
+                ><button class="hb" aria-label="Favoritar">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 21s-8-5.2-8-11a4.5 4.5 0 018-2.8A4.5 4.5 0 0120 10c0 5.8-8 11-8 11z"
+                    />
+                  </svg></button
+                ><span class="pr">R$ 420 mil</span>
+                <div class="in">
+                  <div class="tag">Sítio</div>
+                  <h3>Sítio com área verde</h3>
+                  <div class="loc">
+                    <svg viewBox="0 0 24 24"><use href="#pin" /></svg>Ipu — CE
+                  </div>
+                  <a
+                    class="tag"
+                    href="#/servicos"
+                    style="
+                      text-decoration: none;
+                      display: inline-block;
+                      margin-top: 10px;
+                    "
+                    >Ver detalhes →</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </section>
+        <section>
+          <div class="wrap">
+            <div class="ab">
+              <div class="abi">
+                <svg class="scene" viewBox="0 0 400 260">
+                  <use href="#farm" />
+                </svg>
+                <div class="bd">
+                  <b>98%</b><span>clientes satisfeitos</span>
+                </div>
+              </div>
+              <div>
+                <div class="eyebrow">Por que a Domus</div>
+                <h2>
+                  Uma escolha importante merece <b>atenção de verdade.</b>
+                </h2>
+                <p class="lead">
+                  Unimos marketing e conhecimento do mercado de Ipu para o seu
+                  imóvel ser visto por quem realmente importa.
+                </p>
+                <ul class="ck">
+                  <li>Fotos e vídeos que valorizam cada detalhe</li>
+                  <li>Anúncios segmentados para o público certo</li>
+                  <li>Atendimento humano em todo o processo</li>
+                </ul>
+                <div class="stats" style="text-align: left">
+                  <div><b>+150</b><span>imóveis divulgados</span></div>
+                  <div><b>3x</b><span>mais alcance</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="cta2">
+          <div class="eyebrow">Fale com a Domus</div>
+          <h2>
+            Seu próximo endereço pode estar mais perto do que
+            <b>você imagina.</b>
+          </h2>
+          <a class="btn dk" href="#/contato">FALAR COM UM ESPECIALISTA →</a>
+        </div>
       </div>
 
       <div class="page" id="servicos">
@@ -593,9 +745,8 @@
               </div>
               <div class="card prop pc" data-t="Comercial">
                 <svg class="scene" viewBox="0 0 400 260" style="">
-                  <use href="#shop" />
-                </svg>
-                <span class="pr">Aluguel R$ 1.800</span>
+                  <use href="#shop" /></svg
+                ><span class="pr">Aluguel R$ 1.800</span>
                 <div class="in">
                   <div class="tag">Comercial</div>
                   <h3>Sala comercial no centro</h3>
@@ -826,6 +977,20 @@
         document.querySelectorAll("#pl .prop").forEach(function (c) {
           c.style.display = f === "Todos" || c.dataset.t === f ? "" : "none";
         });
+      });
+
+      function busca() {
+        var v = document.getElementById("bt").value;
+        location.hash = "#/servicos";
+        setTimeout(function () {
+          var b = document.querySelector('#fb [data-f="' + v + '"]');
+          if (b) b.click();
+          document.getElementById("pl").scrollIntoView({ behavior: "smooth" });
+        }, 80);
+      }
+      document.addEventListener("click", function (e) {
+        var b = e.target.closest(".hb");
+        if (b) b.classList.toggle("on");
       });
     </script>
   </body>
